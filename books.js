@@ -13,7 +13,7 @@ if (urlArr[2] === "style.css"){
   fs.readFile("style.css" , function(err,data){
     var style = data.toString();
     res.end(style);
-  })
+  });
 }else if(library[urlArr[1]]){
 
   fs.readFile("index.html" , function(err,data1){
@@ -58,7 +58,8 @@ else if (urlArr[1] === "favicon.ico") {
 }
 
 });
-server.listen(80);
+// server.listen(80);
+server.listen(2000);
 
 
 var paginate = function(book , pg){
@@ -69,4 +70,4 @@ var paginate = function(book , pg){
     pages.push(lines[i]);
   }
   return pages.join("</br>");
-}
+};
