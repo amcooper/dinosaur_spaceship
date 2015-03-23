@@ -4,21 +4,21 @@ var library = {Alice_in_Wonderland:"aliceInWonderland.txt" , Peter_Pan:"peter.tx
 Jungle_Book:"jungle.txt" , Andersens_Fairy_Tales:"andersen.txt"};
 var http = require("http");
 var fs = require("fs");
-var server = http.createServer(function(req,res){
+var server = http.createServer(function(req,res) {
 
   var requrl = req.url;
   var urlArr = requrl.split("/");
   console.log(urlArr);
-  if (urlArr[2] === "style.css"){
-    fs.readFile("style.css" , function(err,data){
+  if (urlArr[2] === "style.css") {
+    fs.readFile("style.css" , function(err,data) {
       var style = data.toString();
       res.end(style);
     });
-  }else if(library[urlArr[1]]){
+  } else if (library[urlArr[1]]) {
 
-    fs.readFile("index.html" , function(err,data1){
+    fs.readFile("index.html" , function(err,data1) {
 
-      fs.readFile( library[urlArr[1]] , function(err,data2){
+      fs.readFile( library[urlArr[1]] , function(err,data2) {
         var paginatedFile = paginate(data2.toString() , urlArr[2]);
         var result = data1.toString().replace("REPLACE", paginatedFile);
         result = result.replace("pBack", "https://dinosaur-spaceship.herokuapp.com/" + urlArr[1] + "/" + (parseInt(urlArr[2]) - 1)+" ");
@@ -64,7 +64,7 @@ var server = http.createServer(function(req,res){
 server.listen(2000);
 
 
-var paginate = function(book , pg){
+var paginate = function(book , pg) {
   var pages = [];
   var lines = book.split("\n");
   var startLine = (pg-1) * 22;

@@ -3,16 +3,24 @@
   "version": "1.0.0",
   "main": "books.js",
   "scripts": {
+    "start": "node books.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/amcooper/books.git"
   },
+  "engines": {
+    "node": "0.10.x"
+  },
   "author": "Adam Cooper, L Podolnik, C Foran, J Ng, K Hogan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/amcooper/books/issues"
   },
-  "homepage": "https://github.com/amcooper/books"
+  "homepage": "https://github.com/amcooper/books",
+  "dependencies": {
+    "fs": "0.0.2",
+    "http": "0.0.0"
+  }
 }

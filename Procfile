@@ -1,0 +1,2 @@
+web: node books.js
+
