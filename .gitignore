@@ -3,3 +3,4 @@ npm-debug.log
 .DS_Store
 /*.env
 books_ac.js
+url_toggles.txt
