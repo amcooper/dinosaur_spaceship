@@ -16,7 +16,7 @@ var server = http.createServer(function(req,res) {
     });
   } else if (library[urlArr[1]]) {
 
-    fs.readFile("index.html" , function(err,data1) {
+    fs.readFile("sindex.html" , function(err,data1) {
 
       fs.readFile( library[urlArr[1]] , function(err,data2) {
         var paginatedFile = paginate(data2.toString() , urlArr[2]);
@@ -47,8 +47,8 @@ var server = http.createServer(function(req,res) {
       var icon = data.toString();
       res.end(data);
     });
-  } else if (urlArr[1] === "splash.html") {
-    fs.readFile("splash.html", function(err, data) {
+  } else if (urlArr[1] === "index.html") {
+    fs.readFile("index.html", function(err, data) {
       var splash = data.toString();
       res.end(splash);
     });
