@@ -14,8 +14,11 @@ div{
   padding: 2px;
   background-color: #f4ebf4;
   width :600px;
-  height:550px;
-  font-family: 'Old Standard TT', serif;
+  height:450px;
+  font-family: 'Courier New', 'Cutive Mono', monospace;
+  font-weight: bold;
+  font-size: 70%;
+  line-height: 175%;
   /* text-align: center; */
   border-bottom: 2px black solid;
   border-top: 2px black solid;

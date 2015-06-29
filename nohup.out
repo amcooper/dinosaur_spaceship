@@ -1,0 +1,10 @@
+[ '', '' ]
+[33mStarting up http-server, serving [39m[36m./[39m[33m on: [39m[36mhttp://0.0.0.0:2004[39m
+Hit CTRL-C to stop the server
+[Thu, 04 Jun 2015 15:03:19 GMT] "[36mGET[39m [36m/index.html[39m" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36"
+[Thu, 04 Jun 2015 15:03:19 GMT] "[36mGET[39m [36m/splash.css[39m" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36"
+[Thu, 04 Jun 2015 15:03:20 GMT] "[36mGET[39m [36m/favicon.ico[39m" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36"
+[Thu, 04 Jun 2015 15:03:32 GMT] "[36mGET[39m [36m/Jungle_Book/1[39m" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36"
+[Tue, 23 Jun 2015 01:41:04 GMT] "[36mGET[39m [36m/[39m" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36"
+[Tue, 23 Jun 2015 01:41:04 GMT] "[36mGET[39m [36m/splash.css[39m" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36"
+[Tue, 23 Jun 2015 01:41:04 GMT] "[36mGET[39m [36m/favicon.ico[39m" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36"
