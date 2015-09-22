@@ -4,3 +4,4 @@ npm-debug.log
 /*.env
 books_ac.js
 url_toggles.txt
+nohup.out*
