@@ -27,8 +27,8 @@ var server = http.createServer(function(req,res) {
         var result = data1.toString().replace("REPLACE", paginatedFile);
 
         // Include a link to the previous page.
-        // result = result.replace("pBack", "http://theadamcooper.com:2000/" + urlArr[1] + "/" + (parseInt(urlArr[2]) - 1)+" ");
-        result = result.replace("pBack", "http://localhost:2000/" + urlArr[1] + "/" + (parseInt(urlArr[2]) - 1)+" ");
+        result = result.replace("pBack", "http://theadamcooper.com:2000/" + urlArr[1] + "/" + (parseInt(urlArr[2]) - 1)+" ");
+        // result = result.replace("pBack", "http://localhost:2000/" + urlArr[1] + "/" + (parseInt(urlArr[2]) - 1)+" ");
 
         // Calculate the total number of pages. 
         var book = data2.toString();
@@ -37,8 +37,8 @@ var server = http.createServer(function(req,res) {
 
         // If we are not on the last page, include a link to the next page.
         if (urlArr[2] < totalPages) {
-          // result = result.toString().replace("pNext", "http://theadamcooper.com:2000/" + urlArr[1] + "/" + (parseInt(urlArr[2]) + 1));
-          result = result.toString().replace("pNext", "http://localhost:2000/" + urlArr[1] + "/" + (parseInt(urlArr[2]) + 1));
+          result = result.toString().replace("pNext", "http://theadamcooper.com:2000/" + urlArr[1] + "/" + (parseInt(urlArr[2]) + 1));
+          // result = result.toString().replace("pNext", "http://localhost:2000/" + urlArr[1] + "/" + (parseInt(urlArr[2]) + 1));
         } else {
 
         // If we have reached the last page, do not include a link to the nonexistent next page.
